@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: hsl(330, 58%, 68%);
+}
+
+.navbar-nav {
+    background-color: hsl(330, 28%, 50%);
+    color: #8d9296;
+    height: 60px;
+}
+
+.navbar-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar-nav ul li {
+    padding: 10px;
+    font-size: 25px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar-nav ul li a {
+    color: white;
+}
+
+.container {
+    padding: 20px; /* Adiciona padding para manter o conteúdo afastado das bordas */
+    display: flex;
+    flex-direction: column; /* Coloca os filhos em coluna */
+    align-items: flex-start; /* Alinha todos os filhos à esquerda */
+    height: 100vh;
+}
+
+h3 {
+    margin: 40px 0;
+    font-size: 50px;
+}
+
+.form-group {
+    width: 100%; /* Faz cada grupo de formulário ocupar toda a largura disponível */
+}
+
+.form-group label {
+    display: block; /* Faz o label ocupar toda a linha */
+    margin-bottom: 5px; /* Adiciona um espaçamento entre o label e o input */
+    font-size: 25px;
+}
+
+input[type="text"], 
+input[type="email"], 
+select {
+    width: 100%; /* Faz os inputs e select ocuparem toda a largura do form-group */
+}
+
+button {
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(0, 44%, 48%);
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+button:hover {
+    transition: 0.5s;
+    color: green;
+}
+
+#Rodape {
+    background-color: hsl(330, 28%, 50%);
+    color: white;
+    text-align: center;
+    height: 40px;
+    padding-top: 5px;
+}
+
+#Rodape p {
+    font-size: 20px;
+}
+
+@media (max-width: 480px) {
+    .navbar-nav ul {
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-nav ul li {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 35px;
+    }
+    .form-group label {
+        font-size: 20px;
+    }
+    button {
+        font-size: 18px;
+    }
+}
